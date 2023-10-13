@@ -1,5 +1,4 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -7,27 +6,30 @@ const helmet = require('helmet');
 const path = require('path');
 const session = require('express-session');
 const passport = require('passport');
-const GoogleStrategy = require('passport-google-oauth20').Strategy;
-const methodOverride = require('method-override');
 const morgan = require('morgan');
-const exphbs = require('express-handlebars');
 const MongoStore = require('connect-mongo');
 const routes = require('./src/routes/router');
 const server = express();
 
 // Load config
 dotenv.config({ path: path.join(__dirname, 'config', 'config.env') });
-
-// Configure Passport with Google OAuth
 require('./config/passport')(passport);
 
 // Middleware for parsing requests
 server.use(bodyParser.json());
-server.use(bodyParser.urlencoded({ extended: false }));
+server.use(bodyParser.urlencoded({ extended: true }));
 
 // Enable CORS and security headers
 server.use(cors());
-server.use(helmet());
+//server.use(helmet());
+server.use(helmet({
+  contentSecurityPolicy: {
+    directives: {
+      imgSrc: ["'self'", "https://storage.googleapis.com", "https://*.googleusercontent.com"],
+      scriptSrc: ["'self'", "https://code.jquery.com", "https://cdn.jsdelivr.net", "https://maxcdn.bootstrapcdn.com",'unsafe-inline'],
+    },
+  },
+}));
 
 // Logging (only in development)
 if (process.env.NODE_ENV === 'development') {
@@ -54,13 +56,14 @@ server.use(function (req, res, next) {
   next();
 });
 
-const connectDB = require('./config/connector'); // Adjust the path as needed
+const connectDB = require('./config/connector'); 
 connectDB(); 
 
-// Serve static files
-server.use(express.static(path.join(__dirname, 'public')));
+//Serve static files
 server.set('view engine', 'ejs');
-server.set('views', path.join(__dirname, 'src', 'view'));
+server.set('views', path.join(__dirname, 'src', 'views'));
+
+
 server.use(routes);
 const port = process.env.PORT || 3000;
 

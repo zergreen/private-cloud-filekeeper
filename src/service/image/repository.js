@@ -1,7 +1,18 @@
-const connected = require('../../../config/connector')
-class ImgRepository {
-
-}
 module.exports = {
-    ImgRepository
+    imgModel: {
+        userId: '',
+        name: '',
+        data: '',
+        contentType: '',
+        createdAt: ''
+    },
+    imgSchema: {
+        imageId:'',
+        userId: '',
+        name: '',
+        data: '',
+        contentType: '',
+        createdAt: '',
+        updateAt: ''
+    }
 }

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "file-keeper-401404",
+  "private_key_id": "33518f0f641c66e14e6efcc056fb67621e7bb832",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDi8R3xCc7JNqJP\n1950/eIAgnSlkAhLXCu/aNIpJFMSkMONnKypK9Br/LBy/oOFOcQNeHVQdDbh+bGr\n32i7onGgxxhmSazdeB+64r+YvLURHLMpbzvtjvZruYK5F42dYaBlnbXdCVrWECKO\nUI2j9H1d8jTs+WDlX/mNWbGTetGXaJqnSOC3jTKno6PzjsmqyIMEjTE4jLebEdu9\nrh3ACZJxSoIq/j9MBoXYBYeLw8snblrvlpL6nRZev8pPwCnTHIVF9gFcmZaEfoHg\nSpQcsgMaHjDsMo0V+qZSHIt0iWka5cumnKeqRfGpdOw4oFGHItvhri1kkhRWXL2+\nN65ibHHNAgMBAAECggEAAf8uaFV2Zq6xBjQb+Of7QOBSsNqGy5XPrHH6c2k4xHix\nwO8oVXonkmOrlO0ogvM5PVDRO280oCH1PAjW1wBhZ7X2d8iCBzrVbBEu1D9tY5IV\nuAz4SoS9k+WAd+G9PlIwOgk8bDL28bdgxVEUjxv3P9pvyqLaPAy4feX5EPKiM+bm\n1d6dM5gBDAFa144dDUmdvbPJ5l1NnA1Q3TJu8OV1I4tcBT3/CXJU5APdpdCoM++2\nmcmVTkLPGkXiJDt6GLwqO3VEE3ywpDjxZC9ntQbRgKrSQF4WWxv0B8jn3i9Pq/Jg\nSjdAkfs2zS48q3lMQditvPHC7JAFOhQctUkL1GfIQwKBgQDyLAMU2PE7oDXYN1iw\ng2jacUgw5aNh87oDQoANDlq6gPHAknmqmIh9VdYzMU2cN20kV27018/bfPV09pdV\nYG49XsLoX1tjKhqR/8OAQu8ilbWEFqY2Y3C7xIQEFkes6RMi4GD7FDmlPtwn2Bl+\nYMfF6p3jyMPDviKOOxOoJsNNKwKBgQDv5noeeojH7z7eU21q4mROqTtY+3VhWxSX\nySa14xHcOAuTUQjhbz74NsIb9HjGkWrbTJHvETb7bKAyOZYmIreeSq07WKxmw2Dn\n3F5orNj/gUCpIqUZwehydFGuzsggCDKCtmQKqb2wakM2+xlB0b+ia5m3Z9M6csj6\naSbkAc1w5wKBgQDnM22dsaBdNI8zZWOe4VZxdkVdqV9aXL3x7sMhs9qaxBAJsc3G\nOOnV/uUI6sEVqzTfxTmBN6iR+7K7f9DrCa01mgqqnp85BTFowa17/msfsZ4iBR2a\nP0WZffwrirnTMpG6ck0kaCLAyEqXH5D3Pp57LYqftURw1E1ZTL1vg9JhEQKBgQCB\n1O4KSK515djUYbo5ukQm/heMVKp2AeDnNImqrjUgRYSeOaDgwGAH3Tq3/lrOvCxk\netAP3fUvpN4d0GSeRvOwyyFtmNPU2bA8S1scs07NGJpx7roDcpnmN2VtgaN1Enqj\nmyoRS0PJkfjGbKaCpI1dzXXneF0sqKp0Oyw9AWy5yQKBgERiTsc4HKCIPXGG1cuo\nPT29u1OkqKwXLNMJI9iVafhq/j0JZx2KNldZN7vdKHbjBWb7EYY+ee2xuP2fcSRc\nWJXXC4royDFUeEdRN4CJQ1Ew2JWv27oyOFv7+qL56X+FZM28DVIz4w/OeezkKIw0\nWk4gKiKyLZ5PiYg1BF+YaAPK\n-----END PRIVATE KEY-----\n",
+  "client_email": "filekeeper@file-keeper-401404.iam.gserviceaccount.com",
+  "client_id": "101534454679628867125",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/filekeeper%40file-keeper-401404.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

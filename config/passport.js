@@ -22,7 +22,6 @@ module.exports = function (passport) {
 
         try {
           let user = await Users.findOne({ googleId: profile.id });
-
           if (user) {
             done(null, user);
           } else {

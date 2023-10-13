@@ -1,3 +1,19 @@
+const mongoose = require('mongoose');
+const connectDB = async () => {
+  try {
+    await mongoose.connect('mongodb+srv://root:1234@cluster0.h4iejmb.mongodb.net/project-cloud', {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      // Remove the useFindAndModify option
+      // useFindAndModify: false,
+    });
+    console.log('[INFO] Connected to MongoDB');
+  } catch (error) {
+    console.error('[ERROR] Error connecting to MongoDB:', error);
+  }
+};
+module.exports = connectDB;
+
 // const mysql = require('mysql');
 // const UsersTable = require('../db.migration/UsersTable');
 
@@ -26,21 +42,3 @@
 //         connection.end();
 //     });
 // });
-
-const mongoose = require('mongoose');
-
-const connectDB = async () => {
-  try {
-    await mongoose.connect('mongodb+srv://root:1234@cluster0.h4iejmb.mongodb.net/project-cloud', {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      // Remove the useFindAndModify option
-      // useFindAndModify: false,
-    });
-    console.log('[INFO] Connected to MongoDB');
-  } catch (error) {
-    console.error('[ERROR] Error connecting to MongoDB:', error);
-  }
-};
-
-module.exports = connectDB;
