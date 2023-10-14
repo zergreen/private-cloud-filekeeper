@@ -1,5 +1,7 @@
 FROM node:18
 
+RUN npm install -g nodemon
+
 WORKDIR /app
 
 COPY package.json ./
@@ -12,4 +14,4 @@ ENV NODE_ENV production
 
 EXPOSE 3000
 
-CMD ["npm","start"]
+CMD ["npm","run","dev"]

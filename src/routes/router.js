@@ -5,8 +5,6 @@ const multer = require('multer')
 const { AuthEndpoint } = require('../service/auth/endpoint');
 const { ImgEndpoint } = require('../service/image/endpoint');
 const {ImgProcess } = require('../service/image/process')
-const { url } = require('inspector');
-const axios = require('axios')
 
 router.get('/auth/google',new AuthEndpoint().authGoogle)
 router.get('/auth/google/callback', new AuthEndpoint().authCallback)

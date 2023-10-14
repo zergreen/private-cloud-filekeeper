@@ -1,5 +1,4 @@
 const { ImgProcess } = require('./process');
-const Images = require('../../models/Images')
 const repo = require('./repository')
 class ImgEndpoint {
 
@@ -13,7 +12,7 @@ class ImgEndpoint {
              this.imageModel.userId = req.user.googleId
              this.imageModel.name = req.file.originalname
              this.imageModel.contentType = req.file.mimetype
-             filepath = __dirname + "\\upload\\" + req.file.originalname
+             filepath = __dirname + "/upload/" + req.file.originalname
         } else {
             console.log("[WARNING] No Such Images File!")
             return res.status(401).send({ error : "No such image file!" })

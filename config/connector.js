@@ -4,8 +4,6 @@ const connectDB = async () => {
     await mongoose.connect('mongodb+srv://root:1234@cluster0.h4iejmb.mongodb.net/project-cloud', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      // Remove the useFindAndModify option
-      // useFindAndModify: false,
     });
     console.log('[INFO] Connected to MongoDB');
   } catch (error) {
