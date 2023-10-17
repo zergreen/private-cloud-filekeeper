@@ -17,7 +17,7 @@ class ImgProcess {
    try {
       //generate imageId
       const uniqueImageId = await this.generateUniqueImageId();
-
+      
       //upload image to google bucket
       const storage = new Storage({
         keyFilename: __dirname + '/upload/file-keeper-401404-33518f0f641c.json',
@@ -34,7 +34,7 @@ class ImgProcess {
       });
      
       const imageUrl = `https://storage.googleapis.com/${bucket.name}/${encodeURIComponent(file.name)}`;
-      
+
       //  const options = {
       //    version: 'v4', // Use v4 signing
       //    action: 'read', // Allow reading the object
