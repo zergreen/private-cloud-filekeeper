@@ -106,3 +106,5 @@ dist
 # Ignore two file
 node_modules
 package-lock.json
+
+lecture
