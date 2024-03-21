@@ -90,4 +90,8 @@ router.get('/', async (req, res) => {
 //   res.render('home', { pageTitle: 'Handlebars Example' });
 // });
 
+router.get('/hello', async (req, res) => {
+    return res.status(200).send({ message: "Hello World!" })
+})
+
 module.exports = router;
