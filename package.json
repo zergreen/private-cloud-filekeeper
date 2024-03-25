@@ -7,12 +7,10 @@
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "author": "Wang Jialing",
+  "author": "Null",
   "license": "ISC",
   "dependencies": {
-    "@google-cloud/storage": "^7.2.0",
     "axios": "^1.5.1",
-    "bootstrap": "^5.3.2",
     "connect-mongo": "^5.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
@@ -22,10 +20,6 @@
     "fs": "^0.0.1-security",
     "helmet": "^7.0.0",
     "mongoose": "^7.6.0",
-    "morgan": "^1.10.0",
-    "multer": "^1.4.5-lts.1",
-    "mysql": "^2.18.1",
-    "passport": "^0.6.0",
-    "passport-google-oauth20": "^2.0.0"
+    "morgan": "^1.10.0"
   }
 }
