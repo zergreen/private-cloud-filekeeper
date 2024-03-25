@@ -3,8 +3,7 @@
 
 ```
 $ npm i
-$ npm install express
-$ npm install mysql
+$ npm start
 ```
 
 # Green
